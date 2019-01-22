@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CategoriesVC: UIViewController { // Mark used the Refactor > Rename, to make this class name more descriptive
+    
+    @IBOutlet weak var categoryTable: UITableView! // Mark hand-codes this, links in IB
 
     override func viewDidLoad() {
         super.viewDidLoad()
