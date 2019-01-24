@@ -28,19 +28,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bu6-JA-FZs">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bu6-JA-FZs">
                                 <rect key="frame" x="0.0" y="67" width="375" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="145" id="j4K-Iq-i8I" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="145" id="j4K-Iq-i8I" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="145"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="j4K-Iq-i8I" id="PaI-CC-afN">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="144.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="mXl-Ca-oLP">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="144.66666666666666"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="138.66666666666666"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHIRTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9l-VD-GSE">
                                                     <rect key="frame" x="70" y="49" width="235" height="47"/>
@@ -57,8 +57,8 @@
                                                 <constraint firstItem="k9l-VD-GSE" firstAttribute="centerX" secondItem="PaI-CC-afN" secondAttribute="centerX" id="ADF-L4-KLb"/>
                                                 <constraint firstAttribute="trailing" secondItem="mXl-Ca-oLP" secondAttribute="trailing" id="Cp8-tf-9qo"/>
                                                 <constraint firstItem="mXl-Ca-oLP" firstAttribute="leading" secondItem="PaI-CC-afN" secondAttribute="leading" id="Ik0-b8-nD5"/>
-                                                <constraint firstAttribute="bottom" secondItem="mXl-Ca-oLP" secondAttribute="bottom" id="kjV-Nd-7iU"/>
-                                                <constraint firstItem="mXl-Ca-oLP" firstAttribute="top" secondItem="PaI-CC-afN" secondAttribute="top" id="nLY-T3-dDc"/>
+                                                <constraint firstAttribute="bottom" secondItem="mXl-Ca-oLP" secondAttribute="bottom" constant="3" id="LxV-qs-hfb"/>
+                                                <constraint firstItem="mXl-Ca-oLP" firstAttribute="top" secondItem="PaI-CC-afN" secondAttribute="top" constant="3" id="snE-ia-WzD"/>
                                                 <constraint firstItem="k9l-VD-GSE" firstAttribute="centerY" secondItem="PaI-CC-afN" secondAttribute="centerY" id="tiZ-AN-vpW"/>
                                             </constraints>
                                         </tableViewCellContentView>
