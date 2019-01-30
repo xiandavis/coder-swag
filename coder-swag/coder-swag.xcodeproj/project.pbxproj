@@ -15,6 +15,7 @@
 		C460266921F7A84D00AA2E32 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460266821F7A84D00AA2E32 /* Category.swift */; };
 		C460266C21F7E02000AA2E32 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C460266B21F7E02000AA2E32 /* DataService.swift */; };
 		C46635BD21F693D300EFFE43 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46635BC21F693D300EFFE43 /* CategoryCell.swift */; };
+		C4B066502201160E002BC622 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0664F2201160E002BC622 /* Product.swift */; };
 		C4E1C0852200FBEF00730483 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E1C0842200FBEF00730483 /* ProductCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		C460266821F7A84D00AA2E32 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		C460266B21F7E02000AA2E32 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		C46635BC21F693D300EFFE43 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		C4B0664F2201160E002BC622 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		C4E1C0842200FBEF00730483 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				C460266821F7A84D00AA2E32 /* Category.swift */,
+				C4B0664F2201160E002BC622 /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				C4E1C0852200FBEF00730483 /* ProductCell.swift in Sources */,
 				C460266921F7A84D00AA2E32 /* Category.swift in Sources */,
 				C460266C21F7E02000AA2E32 /* DataService.swift in Sources */,
+				C4B066502201160E002BC622 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
