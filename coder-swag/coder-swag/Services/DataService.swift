@@ -7,16 +7,16 @@
 //
 
 import Foundation
-class DataService {
-    static let instance = DataService() // CODE STEP 1. By using static here Mark is creating a 'singleton', meaning only one instance can exist, and it will exist for the lifetime of the app unless manually destroyed (potential memory exhaust)
+class DataService { // STEP 5. class because only need one instance of, as opposed to struct
+    static let instance = DataService() // By using static keyword here Mark is creating a 'singleton', meaning only one instance can exist in memory, and it will exist for the lifetime of the app unless manually destroyed (potential memory exhaust)
     
-    private let categories = [ // private so no public access. below data would not be present if requesting it from a server
+    private let categories = [ // STEP 7. private so no public access. categories is array of inferred data type Category. below data would not be present if requesting it from a server, you instead would populate an array i.e. categories = [new array from server]
         Category(title: "SHIRTS", imageName: "shirts.png"),
         Category(title: "HOODIES", imageName: "hoodies.png"),
         Category(title: "HATS", imageName: "hats.png"),
         Category(title: "DIGITAL", imageName: "digital.png") // Category struct did not autocomplete here until I sent ']' down to line below!
     ]
-    private let hats = [ // CODE STEP 2.
+    private let hats = [ // STEP 18.
         Product(title: "Devslopes Logo Graphic Beanie", price: "$18", imageName: "hat01.png"),
         Product(title: "Devslopes Logo Hat Black", price: "$22", imageName: "hat02.png"),
         Product(title: "Devslopes Logo Hat White", price: "$22", imageName: "hat03.png"),
@@ -38,15 +38,15 @@ class DataService {
         Product(title: "Kickflip Studios Shirt Black", price: "$18", imageName: "shirt05.png")
         ]
     
-    private let digitalGoods = [Product]() // CODE STEP 4. Can't use [] for empty array because Swift requires a type; () creates the empty array. VERY IMPORTANT: This statement is needed because our Collection View is feeding off of this data, and needs to receive an array of some kind; if we don't provide an empty array, we'll have a value that is nil and the code will crash!
+    private let digitalGoods = [Product]() // Can't use [] for empty array because Swift requires a type; () creates the empty array. VERY IMPORTANT: This statement is needed because our Collection View is feeding off of this data, and needs to receive an array of some kind; if we don't provide an empty array, we'll have a value that is nil and the code will crash!
     
-    func getCategories() -> [Category] { // CODE STEP 3.
-        return categories // simulates a server response
+    func getCategories() -> [Category] { // STEP 6.
+        return categories // STEP 8. simulates a server response
     }
     
-    func getProducts(forCategoryTitle title:String) -> [Product] { // CODE STEP 5. Mark invents forCategoryTitle param description on the fly
+    func getProducts(forCategoryTitle title:String) -> [Product] { // STEP 19. Mark invents forCategoryTitle param description on the fly
         switch title {
-        case "SHIRTS": // CODE STEP 7. Mark says the order of products here does not matter
+        case "SHIRTS": // STEP 21. Mark says the order of products here does not matter
             return getShirts()
         case "HATS":
             return getHats()
@@ -60,20 +60,20 @@ class DataService {
         
     }
     
-    func getHats() -> [Product] { // CODE STEP 6.
-        return hats
+    func getHats() -> [Product] { // STEP 20a.
+        return hats // STEP 22a.
     }
     
-    func getHoodies() -> [Product] {
-        return hoodies
+    func getHoodies() -> [Product] { // STEP 20b.
+        return hoodies // STEP 22b.
     }
     
-    func getShirts() -> [Product] {
-        return shirts
+    func getShirts() -> [Product] { // STEP 20c.
+        return shirts // STEP 22c.
     }
     
-    func getDigitalGoods() -> [Product] {
-        return digitalGoods
+    func getDigitalGoods() -> [Product] { // STEP 20d.
+        return digitalGoods // STEP 22d.
     }
     
 }

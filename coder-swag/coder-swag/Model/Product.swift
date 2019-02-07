@@ -7,7 +7,8 @@
 //
 
 import Foundation
-struct Product {
+
+struct Product { // STEP 17. struct for creating an obj over and over
     private(set) public var title: String
     private(set) public var price: String // Mark reasons that these numerical characters are for display only and therefore a String, that we are not using the value here (in reality would receive a value from a backend server anyway, and that would be converted to a String for insertion in a text field for display)
     private(set) public var imageName: String
